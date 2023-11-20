@@ -1,7 +1,11 @@
 body{
-    background-color: blueviolet;
+    background-color: aquamarine;
 }
 h1{
     color: black;
     margin-left: 50px;
+}
+h2{
+    color: black;
+    margin-left: 150px;
 }
