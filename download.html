@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winterswijkse Kegelbond</title>
+    <title>Uitslagen</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -47,18 +47,31 @@
             height: auto;
         }
 
-        @media only screen and (max-width: 600px) {
-            nav {
-                flex-direction: column;
-                align-items: center;
-            }
+        .download-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
 
-            nav a {
-                margin: 5px 0;
+        .download-button {
+            cursor: pointer;
+        }
+
+        .download-button.mobile {
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .download-link {
+                margin-top: 10px;
             }
 
             .download-button.desktop {
                 display: none;
+            }
+
+            .download-button.mobile {
+                display: block;
             }
         }
     </style>
@@ -76,9 +89,20 @@
     </nav>
 
     <section>
-        <h2>Welcome to our Bowling Club!</h2>
-        <p>Experience the thrill of competitive bowling with our dedicated club. Join us for a fun and exciting time on the lanes!</p>
-        <!-- Add more content as needed -->
+        <h2>Download Competitive Match Schemes</h2>
+        <p>Choose from our selection of competitive match schemes and enhance your bowling experience.</p>
+        
+        <div class="download-link">
+            <!-- Desktop Download Button -->
+            <a href="path/to/your/match-schemes.zip" download class="download-button desktop">
+                <img src="path/to/your/download-button-image.png" alt="Download Match Schemes">
+            </a>
+
+            <!-- Mobile Download Button -->
+            <a href="path/to/your/match-schemes.zip" download class="download-button mobile">
+                <img src="path/to/your/mobile-download-button-image.png" alt="Download Match Schemes">
+            </a>
+        </div>
     </section>
 
     <footer>
