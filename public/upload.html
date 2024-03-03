@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Uitslagen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="WKB_logo.png" alt="Bowling Club Logo" class="logo">
+        <h1>Winterswijkse Kegelbond</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="download.html">Uitslagen</a>
+    </nav>
+
+    <section>
+        <h2>Upload Uitslagen</h2>
+        <p>Ruimte voor tekst</p>
+        
+        <!-- File Upload Form -->
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="file">Kies een bestand:</label>
+            <input type="file" name="file" id="file" required>
+            <button type="submit">Upload</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2024 Winterswijkse Kegelbond. Alle Rechten Voorbehouden.
+    </footer>
+
+</body>
+</html>
