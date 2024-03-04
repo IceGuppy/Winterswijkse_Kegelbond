@@ -41,3 +41,15 @@
 
 </body>
 </html>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Extract message from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const notification = urlParams.get('message');
+
+        // Display notification if available
+        if (notification) {
+            alert(notification);
+        }
+    });
+</script>

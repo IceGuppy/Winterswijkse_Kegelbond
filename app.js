@@ -41,7 +41,8 @@ app.post('/upload', upload.single('file'), (req, res) => {
         return res.status(400).send('No file uploaded.');
     }
 
-    res.send('File uploaded successfully!');
+    const notification = 'Uploaden geslaagd!';
+    res.redirect(`download.html?message=${encodeURIComponent(notification)}`);
 });
 
 // Start the server
